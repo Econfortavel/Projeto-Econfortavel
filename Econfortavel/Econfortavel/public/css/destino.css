@@ -1,0 +1,112 @@
+.destinos {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+
+
+/* TÍTULO */
+
+.titulo {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.titulo h1 {
+    color: #173d2a;
+    font-family: Georgia, serif;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.titulo p {
+    color: #68736e;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+
+/* CARDS */
+
+.lista-destinos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.card-destino {
+    background-color: white;
+    border: 1px solid #dce5df;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+/* IMAGENS */
+
+.card-destino img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* CONTEÚDO */
+
+.conteudo {
+    padding: 20px;
+}
+
+.conteudo h2 {
+    color: #173d2a;
+    font-family: Georgia, serif;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.conteudo p {
+    color: #68736e;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 18px;
+}
+
+
+/* BOTÃO */
+
+.botao {
+    display: inline-block;
+    background-color: #0d5a3b;
+    color: white;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.botao:hover {
+    background-color: #08442d;
+}
+
+
+/* CELULAR */
+
+@media (max-width: 700px) {
+
+    .destinos {
+        width: 92%;
+    }
+
+    .lista-destinos {
+        grid-template-columns: 1fr;
+    }
+
+    .titulo h1 {
+        font-size: 25px;
+    }
+}

@@ -1,0 +1,109 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#d9d9d9;
+}
+
+.container{
+    width:900px;
+    height:550px;
+    background:white;
+    margin:40px auto;
+    border-radius:20px;
+    display:flex;
+    overflow:hidden;
+}
+
+.esquerda{
+    width:30%;
+    background:#0b3d16;
+    color:white;
+    padding:20px;
+}
+
+.esquerda img{
+    width:140px;
+    display:block;
+    margin:20px auto;
+}
+
+.esquerda p{
+    margin-top:20px;
+    font-size:14px;
+    line-height:22px;
+}
+
+.direita{
+    width:70%;
+    text-align:center;
+    padding:30px;
+}
+
+.logo{
+    width:170px;
+    margin-bottom:20px;
+}
+
+.form{
+    width:70%;
+    margin:auto;
+}
+
+.linha{
+    display:flex;
+    gap:10px;
+    margin-bottom:15px;
+}
+
+input{
+    width:100%;
+    padding:10px;
+}
+
+button{
+    margin-top:15px;
+    padding:10px 30px;
+    border:none;
+    background:#0b3d16;
+    color:white;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#145a23;
+}
+
+a{
+    color:rgb(15, 11, 252);
+    text-decoration:none;
+}
+
+small{
+    display:block;
+    margin-top:20px;
+}
+
+
+
+/* CELULAR */
+
+@media (max-width: 500px) {
+
+    .destinos {
+        width: 92%;
+    }
+
+    .lista-destinos {
+        grid-template-columns: 1fr;
+    }
+
+    .titulo h1 {
+        font-size: 25px;
+    }
+}

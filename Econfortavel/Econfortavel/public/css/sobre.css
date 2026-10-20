@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f7f5;
+    font-family: Arial, sans-serif;
+    color: #074928;
+}
+
+
+/* PÁGINA */
+
+.pagina {
+    width: 90%;
+    max-width: 1100px;
+    margin: 25px auto;
+    background-color: white;
+    border: 1px solid #d9e1dd;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+
+/* MENU */
+
+header {
+    height: 68px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    background-color: white;
+}
+
+.logo {
+    font-size: 16px;
+    font-weight: bold;
+    color: #074928;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-left: auto;
+}
+
+nav a {
+    text-decoration: none;
+    color: #5f6763;
+    font-size: 12px;
+    padding: 9px 12px;
+    border-radius: 7px;
+}
+
+nav a:hover {
+    color: #074928;
+}
+
+nav .entrar {
+    background-color: #074928;
+    color: white;
+    padding: 9px 16px;
+}
+
+
+/* BANNER */
+
+.banner {
+    background-color: #074928;
+    color: white;
+    text-align: center;
+    padding: 28px 30px 30px;
+}
+
+.banner h1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    max-width: 850px;
+    margin: auto;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #c5d4ce;
+}
+
+
+/* QUEM SOMOS */
+
+.quem-somos {
+    text-align: center;
+    padding: 27px 40px 20px;
+}
+
+.quem-somos h2 {
+    font-size: 25px;
+    margin-bottom: 7px;
+}
+
+.quem-somos p {
+    max-width: 750px;
+    margin: auto;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #77817d;
+}
+
+
+/* CARDS */
+
+.cards {
+    display: flex;
+    gap: 14px;
+    padding: 0 40px 45px;
+}
+
+.card {
+    flex: 1;
+    background-color: #f3f6f4;
+    border: 1px solid #dce4df;
+    border-radius: 7px;
+    padding: 12px 15px;
+    text-align: center;
+    min-height: 90px;
+}
+
+.card h3 {
+    font-size: 18px;
+    margin-bottom: 7px;
+}
+
+.card p {
+    font-size: 15px;
+    line-height: 1.4;
+    color: #65706b;
+}
+
+/* RODAPÉ */
+
+footer {
+    background-color: #074928;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-family: Arial, sans-serif;
+   
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+.copyright {
+    font-size: 13px;
+}
+
+.frase {
+    font-size: 12px;
+    opacity: 0.85;
+}
+
+
+/* RESPONSIVO */
+
+@media (max-width: 700px) {
+
+    .pagina {
+        width: 95%;
+        margin: 15px auto;
+    }
+
+    header {
+        height: auto;
+        padding: 15px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav {
+        margin: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .banner h1 {
+        font-size: 20px;
+    }
+
+    .cards {
+        flex-direction: column;
+        padding: 0 25px 30px;
+    }
+}
